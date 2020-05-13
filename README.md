@@ -4,11 +4,13 @@ Computer Service website. This is project to my portfolio.
 
 ## Live preview
 
+    [click here](https://sarzal666.github.io/Serwis-IT/).
+
 ## Installation
 
 This project use [npm](https://docs.npmjs.com/about-npm/).
 
-    ```bash
+    ```
     npm install
     ```
 
