@@ -52,6 +52,7 @@ html {
 }
 
 header,
+main,
 nav {
   display: block;
 }
@@ -131,15 +132,18 @@ button {
   text-transform: none;
 }
 
-button {
+button,
+[type='button'] {
   -webkit-appearance: button;
 }
 
-button:not(:disabled) {
+button:not(:disabled),
+[type='button']:not(:disabled) {
   cursor: pointer;
 }
 
-button::-moz-focus-inner {
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
@@ -197,6 +201,10 @@ button::-moz-focus-inner {
   }
 }
 
+.carousel {
+  position: relative;
+}
+
 @keyframes spinner-border {
   to {
     transform: rotate(360deg);
@@ -233,8 +241,8 @@ button::-moz-focus-inner {
   }
 }
 
-.shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .text-uppercase {
@@ -285,6 +293,7 @@ body {
 
 .nav-link {
   color: #fff;
+  font-size: 20px;
 }
 
 .contactBtn--box {
@@ -316,6 +325,7 @@ body {
 
 .contactBtn {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -324,6 +334,38 @@ body {
   color: white;
   font-weight: 600;
   font-size: 20px;
+}
+
+.main {
+  height: calc(100vh - 88px);
+}
+.main .glide {
+  height: 100%;
+}
+.main .glide .glide__track {
+  height: 100%;
+}
+.main .glide .glide__track .glide__slides {
+  height: 100%;
+}
+.main .glide__slide {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .glide__slide + .first {
+  background-image: url(images/images/assets/server-room.jpg);
+}
+.main .glide__slide + .second {
+  background-image: url(images/images/assets/bump-fist.jpg);
+}
+.main .glide__slide + .third {
+  background-image: url(images/images/assets/pc.jpg);
+}
+.main .glide__bullets {
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
 }
 
 /*# sourceMappingURL=style.css.map*/

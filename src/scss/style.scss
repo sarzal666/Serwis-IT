@@ -25,6 +25,7 @@ body {
 }
 .nav-link {
   color: #fff;
+  font-size: 20px;
 }
 
 .contactBtn--box {
@@ -54,10 +55,49 @@ body {
 }
 .contactBtn {
   position: absolute;
+  width: 100%;
   @include absolute-align();
   border: none;
   background-color: transparent;
   color: white;
   font-weight: $fontSemiBold;
   font-size: 20px;
+}
+
+// *********** MAIN ****************
+
+.main {
+  height: calc(100vh - 88px);
+
+  // .glide__image {
+  //   max-height: calc(100vh - 88px);
+  // }
+  .glide {
+    height: 100%;
+    .glide__track {
+      height: 100%;
+      .glide__slides {
+        height: 100%;
+      }
+    }
+  }
+  .glide__slide {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .glide__slide + .first {
+    background-image: url(../../assets/server-room.jpg);
+  }
+  .glide__slide + .second {
+    background-image: url(../../assets/bump-fist.jpg);
+  }
+  .glide__slide + .third {
+    background-image: url(../../assets/pc.jpg);
+  }
+  .glide__bullets {
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+  }
 }
