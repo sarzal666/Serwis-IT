@@ -73,7 +73,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           outputPath: 'images',
-          name: 'images/[path][name].[ext]',
+          name: '[name].[ext]',
         },
       },
     ],
