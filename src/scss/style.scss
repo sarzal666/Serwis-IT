@@ -67,13 +67,11 @@ body {
 // *********** MAIN ****************
 
 .main {
+  position: relative;
   height: calc(100vh - 88px);
-
-  // .glide__image {
-  //   max-height: calc(100vh - 88px);
-  // }
   .glide {
     height: 100%;
+    z-index: 2;
     .glide__track {
       height: 100%;
       .glide__slides {
@@ -99,5 +97,29 @@ body {
     position: absolute;
     bottom: 5%;
     left: 35%;
+    .glide__bullet {
+      width: 15px;
+      height: 15px;
+    }
   }
+}
+
+.infoBlock {
+  height: 100%;
+  width: 500px;
+  background-color: #bac2cb;
+  opacity: 0.741;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.BACKGROUND {
+  opacity: 0.741;
+  position: absolute;
+  left: 1751px;
+  top: 1654px;
+  width: 573px;
+  height: 681px;
+  z-index: 202;
 }

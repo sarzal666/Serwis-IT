@@ -51,6 +51,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+aside,
 header,
 main,
 nav {
@@ -337,10 +338,12 @@ body {
 }
 
 .main {
+  position: relative;
   height: calc(100vh - 88px);
 }
 .main .glide {
   height: 100%;
+  z-index: 2;
 }
 .main .glide .glide__track {
   height: 100%;
@@ -366,6 +369,21 @@ body {
   position: absolute;
   bottom: 5%;
   left: 35%;
+}
+.main .glide__bullets .glide__bullet {
+  width: 15px;
+  height: 15px;
+}
+
+.infoBlock {
+  height: 100%;
+  width: 500px;
+  background-color: #bac2cb;
+  opacity: 0.741;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=style.css.map*/
