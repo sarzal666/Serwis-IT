@@ -2,8 +2,62 @@
 @import 'vars.scss';
 
 body {
+  font: {
+    family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    weight: $fontRegular;
+  }
   height: 5000px;
 }
 .mainHeader {
   background-color: $basicBlue;
+  height: 88px;
+}
+
+.brandLogo {
+  width: 220px;
+}
+
+.navList {
+  li:nth-child(2) {
+    margin: 0 60px 0 60px;
+  }
+}
+.nav-link {
+  color: #fff;
+}
+
+.contactBtn--box {
+  position: relative;
+  z-index: 1;
+  width: 242px;
+  height: 46px;
+  background-color: black;
+  color: #fff;
+  border: {
+    radius: 23px;
+    width: 0px;
+  }
+}
+.iconHolder {
+  background-color: #fff;
+  position: absolute;
+  @include absolute-align(50%, 2%);
+  width: 46px;
+  height: 40px;
+  border-radius: 21px;
+  z-index: 2;
+  cursor: pointer;
+  .letterIcon {
+    width: 28px;
+  }
+}
+.contactBtn {
+  position: absolute;
+  @include absolute-align();
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: $fontSemiBold;
+  font-size: 20px;
 }

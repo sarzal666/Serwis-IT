@@ -1,1 +1,10 @@
 $basicBlue: #4894fb;
+$fontRegular: 400;
+$fontSemiBold: 600;
+$fontBold: 700;
+
+@mixin absolute-align($top: 50%, $left: 50%) {
+  top: $top;
+  left: $left;
+  transform: translate(-$left, -$top);
+}

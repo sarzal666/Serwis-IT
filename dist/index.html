@@ -3,12 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Serwis IT</title>
   <link href="style.css" rel="stylesheet"></head>
 
   <body>
-    <header class="mainHeader sticky-top">
-      test
+    <header class="mainHeader container-fluid sticky-top shadow d-flex align-items-center">
+      <div class="logoAlign col-lg-3 d-flex justify-content-center">
+        <img src="../assets/logo/logo-Serwis-IT.svg" alt="logo Serwis IT" class="brandLogo" />
+      </div>
+      <nav class="headerNav col-lg-6 d-flex justify-content-center">
+        <ul class="nav navList text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="#naprawa">naprawa</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#helpdesk">helpdesk</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#odzyskiwanie_danych">odzyskiwanie danych</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contactBtn--align d-flex justify-content-center align-items-center">
+        <div class="contactBtn--box">
+          <div class="iconHolder d-flex justify-content-center align-items-center">
+            <img src="../assets/icons/letter.svg" alt="letter icon" class="letterIcon" />
+          </div>
+          <button class="contactBtn text-uppercase">kontakt</button>
+        </div>
+      </div>
     </header>
   <script src="bundle.js"></script></body>
 </html>
