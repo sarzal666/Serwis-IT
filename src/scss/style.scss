@@ -62,6 +62,9 @@ body {
   color: white;
   font-weight: $fontSemiBold;
   font-size: 20px;
+  &:focus {
+    outline: none;
+  }
 }
 
 // *********** MAIN ****************
@@ -104,22 +107,45 @@ body {
   }
 }
 
-.infoBlock {
+.rightPanel {
   height: 100%;
-  width: 500px;
   background-color: #bac2cb;
-  opacity: 0.741;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 3;
+
+  &--align {
+    height: 100%;
+    position: absolute;
+  }
 }
-.BACKGROUND {
-  opacity: 0.741;
-  position: absolute;
-  left: 1751px;
-  top: 1654px;
-  width: 573px;
-  height: 681px;
-  z-index: 202;
+
+.infoBlock__sentence {
+  font: {
+    size: 30px;
+    weight: $fontSemiBold;
+  }
+  color: #fff;
+  text-align: center;
+  padding-right: 30px;
+  margin: 60px 0 31px 0;
+}
+
+.infoBlocks > div {
+  margin: 9px;
+}
+.infoBlock--phone,
+.infoBlock--email {
+  width: 256px;
+  height: 83px;
+  background-color: $basicBlue;
+}
+.infoBlock--repair,
+.infoBlock--helpdesk {
+  width: 120px;
+  height: 120px;
+  background-color: $basicBlue;
+  align-self: flex-start;
 }
