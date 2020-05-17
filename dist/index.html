@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +33,11 @@
       <div class="contactBtn--align d-flex justify-content-center align-items-center">
         <div class="contactBtn--box">
           <div class="iconHolder d-flex justify-content-center align-items-center">
-            <img src="../assets/icons/letter.svg" alt="letter icon" class="letterIcon" />
+            <img
+              src="../assets/icons/communication-black.svg"
+              alt="letter icon"
+              class="letterIcon"
+            />
           </div>
           <button class="contactBtn text-uppercase">kontakt</button>
         </div>
@@ -60,16 +64,56 @@
             Rozwiążemy kazdy problem z twoim sprzętem
           </h1>
           <div class="infoBlocks col-lg-9 d-flex flex-column align-items-center">
-            <div class="infoBlock--phone"></div>
-            <div class="infoBlock--email"></div>
-            <div class="d-flex justify-content-between">
-              <div class="infoBlock--repair"></div>
-              <div class="infoBlock--helpdesk"></div>
+            <a
+              href="tel: 519-498-845"
+              class="infoBlock--phone d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/icons/phonecall.svg"
+                alt="phonecall icon"
+                class="infoBlock--icon"
+              />
+            </a>
+            <a
+              href="mailto:sarzal666@gmail.com"
+              class="infoBlock--email d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/icons/communication.svg"
+                alt="letter icon"
+                class="infoBlock--icon"
+              />
+            </a>
+            <div class="infoBlock--align d-flex justify-content-between">
+              <a
+                href="#naprawa"
+                class="infoBlock--repair mr-2 d-flex align-items-center justify-content-center flex-column"
+              >
+                <img
+                  src="../assets/icons/computer.svg"
+                  alt="computer icon"
+                  class="infoBlock--icon"
+                />
+              </a>
+              <a
+                href="#helpdesk"
+                class="infoBlock--helpdesk ml-2 d-flex align-items-center justify-content-center flex-column"
+              >
+                <img src="../assets/icons/support.svg" alt="support icon" class="infoBlock--icon" />
+              </a>
             </div>
-            <div class="infoBlock--backup"></div>
+            <a
+              href="#backup"
+              class="infoBlock--backup d-flex align-items-center justify-content-center flex-column"
+            >
+              <img src="../assets/icons/data.svg" alt="data icon" class="infoBlock--icon" />
+            </a>
           </div>
         </div>
       </aside>
     </main>
+    <div class="social">
+      <div class="social__ikons"></div>
+    </div>
   <script src="bundle.js"></script></body>
 </html>

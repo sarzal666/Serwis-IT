@@ -50,7 +50,7 @@ body {
   z-index: 2;
   cursor: pointer;
   .letterIcon {
-    width: 28px;
+    width: 26px;
   }
 }
 .contactBtn {
@@ -109,8 +109,9 @@ body {
 
 .rightPanel {
   height: 100%;
-  background-color: #bac2cb;
-  opacity: 0.8;
+  // background-color: #bac2cb;
+  // opacity: 0.8;
+  background-color: rgba(186, 194, 203, 0.8);
   position: absolute;
   top: 0;
   right: 0;
@@ -133,11 +134,13 @@ body {
   margin: 60px 0 31px 0;
 }
 
-.infoBlocks > div {
+.infoBlocks > div,
+a {
   margin: 9px;
 }
 .infoBlock--phone,
-.infoBlock--email {
+.infoBlock--email,
+.infoBlock--backup {
   width: 256px;
   height: 83px;
   background-color: $basicBlue;
@@ -147,5 +150,25 @@ body {
   width: 120px;
   height: 120px;
   background-color: $basicBlue;
-  align-self: flex-start;
+  margin: 0;
+}
+
+.infoBlock--icon {
+  width: 40px;
+}
+.social {
+  height: 430px;
+  width: 52px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  right: 11%;
+  top: 36%;
+  border-radius: 26px;
+  .social__ikons {
+    height: 270px;
+    width: 52px;
+    background-color: #000;
+    border-radius: 26px;
+  }
 }
