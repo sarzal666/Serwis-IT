@@ -6,8 +6,8 @@ const log = (log) => console.log(log);
 new Glide('.glide', {
   type: 'carousel',
   gap: 0,
-  autoplay: false,
+  autoplay: 2000,
   hoverpause: true,
-  animationDuration: 1200,
+  animationDuration: 1400,
 }).mount();
 // log('auuuu');

@@ -17356,9 +17356,9 @@
         new _glidejs_glide__WEBPACK_IMPORTED_MODULE_1__['default']('.glide', {
           type: 'carousel',
           gap: 0,
-          autoplay: false,
+          autoplay: 2000,
           hoverpause: true,
-          animationDuration: 1200,
+          animationDuration: 1400,
         }).mount(); // log('auuuu');
 
         /***/
