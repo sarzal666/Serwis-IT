@@ -135,8 +135,10 @@ body {
 }
 
 .infoBlocks > div,
-a {
+.infoBlocks > a {
   margin: 9px;
+  padding: 10px;
+  text-decoration: none !important;
 }
 .infoBlock--phone,
 .infoBlock--email,
@@ -151,8 +153,13 @@ a {
   height: 120px;
   background-color: $basicBlue;
   margin: 0;
+  text-decoration: none !important;
 }
-
+.infoBlock--desc {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
 .infoBlock--icon {
   width: 40px;
 }
@@ -160,15 +167,37 @@ a {
   height: 430px;
   width: 52px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   z-index: 999;
   right: 11%;
-  top: 36%;
+  bottom: 10%;
   border-radius: 26px;
-  .social__ikons {
+  &__phone {
+    width: 40px;
+  }
+  .social__icons {
     height: 270px;
     width: 52px;
     background-color: #000;
     border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    &--icon {
+      width: 40px;
+    }
+  }
+  .social__messenger {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-51%);
+    bottom: -2%;
   }
 }
