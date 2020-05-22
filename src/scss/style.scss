@@ -201,3 +201,49 @@ body {
     bottom: -2%;
   }
 }
+
+// Section repair
+
+.sectionHeader {
+  font: {
+    size: 36px;
+    weight: $fontSemiBold;
+  }
+  text-align: center;
+}
+.headerFragOutline {
+  background-image: url('../../assets/headerOutline.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 15px 0;
+}
+.repair {
+  position: relative;
+}
+.repair__text {
+  margin-right: 50px;
+  width: 100%;
+  z-index: 997;
+}
+.repair__text--paragraph {
+  margin-top: 50px;
+}
+.repair__backgroundImage {
+  position: absolute;
+  min-height: 100%;
+  right: 0;
+}
+.repair__backgroundImage--image {
+  height: 100%;
+  max-height: fit-content;
+  position: absolute;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/laptopguy.jpg');
+  background-size: cover;
+  background-position: center;
+}
