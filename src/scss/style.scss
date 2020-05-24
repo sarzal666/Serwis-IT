@@ -273,7 +273,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
   padding: 50px 0;
 }
@@ -292,4 +292,28 @@ body {
     margin: 40px 0;
     text-align: center;
   }
+}
+
+// section backup
+.backup .headerFragOutline {
+  margin: 30px 0;
+}
+.backup__block {
+  background-color: $basicBlue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  color: #fff;
+  & img {
+    width: 100px;
+    margin: 0 0 20px 0;
+  }
+}
+
+// footer
+.footer {
 }
