@@ -253,9 +253,55 @@
         <p>Do uszkodzeń mechaniki dysku zaliczamy uszkodzenie głowic, zatarcie silnika</p>
       </div>
     </section>
-    <footer class="footer container">
-      <div class="address"></div>
-      <div class="contactForm"></div>
+    <footer class="footer">
+      <div class="container d-flex">
+        <div class="buisnessInfo col-lg-6">
+          <a href="index.html"
+            ><img src="../assets/logo/logo-Serwis-IT.svg" alt="logo" class="address__logo"
+          /></a>
+          <div class="address">
+            <div class="address__left">
+              <address>
+                Trakt Partyzancki 27a Warszawa
+              </address>
+              <p>Pon-Pt: 8:00 - 18:00</p>
+            </div>
+            <div class="address__right d-flex flex-column">
+              <a href="tel:+48 519 498 845">+48 519 498 845</a>
+              <a href="mailto:msarzala.work@gmail.com">msarzala.work@gmail.com</a>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              class="map__frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9728.759464020624!2d20.66911490654623!3d52.43947529104554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ea5621b1e7e51%3A0x8bb71b42c9f2cef!2sTwierdza%20Modlin!5e0!3m2!1spl!2spl!4v1590344472300!5m2!1spl!2spl"
+              style="border: 0;"
+              allowfullscreen="true"
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contactForm col-lg-6">
+          <form
+            id="contact"
+            method="post"
+            class="form d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2 class="form__header text-uppercase">Napisz do nas</h2>
+            <label for="email">Twój email</label>
+            <input type="email" name="email" class="form__input" required />
+            <label for="name">Imię</label>
+            <input type="text" name="name" class="form__input" required />
+            <label for="description">Treść</label>
+            <textarea name="description" no-resize required class="form__textarea"></textarea>
+            <button type="submit" class="form__btn">Wyślij</button>
+          </form>
+        </div>
+      </div>
+      <div class="authora d-flex justify-content-center">
+        Projekt i wdrożenie strony : <a href="https://github.com/sarzal666">Michał Sarzała</a>
+      </div>
     </footer>
   <script src="bundle.js"></script></body>
 </html>

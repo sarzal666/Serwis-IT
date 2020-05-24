@@ -7,7 +7,6 @@ body {
     color: #fff;
     weight: $fontRegular;
   }
-  height: 5000px;
 }
 .mainHeader {
   background-color: $basicBlue;
@@ -316,4 +315,81 @@ body {
 
 // footer
 .footer {
+  background-color: $footerBg;
+  color: #fff;
+}
+.buisnessInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+.address {
+  font-size: 20px;
+  &__logo {
+    width: 250px;
+  }
+  // &__right > a {
+  //   color: #fff;
+  // }
+  div {
+    margin: 20px 0;
+  }
+}
+.map {
+  width: 100%;
+  height: 400px;
+  &__frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
+.contactForm {
+  min-height: 100%;
+  width: 100%;
+  padding: 40px 0;
+  color: #000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  .form {
+    min-height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: inset 0px 4px 24.84px 2.16px rgba(0, 0, 0, 0.35);
+    font-size: 18px;
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__input {
+      border: none;
+      border-bottom: 2px solid $basicBlue;
+      border-radius: 2px;
+      margin: 10px 0;
+      width: 50%;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__textarea {
+      border: none;
+      border-bottom: 2px solid $basicBlue;
+      border-radius: 2px;
+      width: 50%;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__btn {
+      margin-top: 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: $basicBlue;
+      color: #fff;
+      width: 40%;
+      height: 35px;
+    }
+  }
 }
